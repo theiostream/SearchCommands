@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = SearchCommandsPrefs;
+	cell = PSLinkCell;
+	detail = SearchCommandsPrefsListController;
+	icon = SearchCommandsPrefs.png;
+	isController = 1;
+	label = SearchCommandsPrefs;
+    };
+}

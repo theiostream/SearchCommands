@@ -1,0 +1,6 @@
+*/.theos
+*/_
+*.o
+*.stamp
+*theos/
+.DS_Store

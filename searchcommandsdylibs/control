@@ -1,0 +1,10 @@
+Package: com.yourcompany.searchcommandsdylibs
+Name: searchcommandsdylibs
+Depends: 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome library of some sort!!
+Maintainer: theiostream
+Author: theiostream
+Section: System
+Tag: role::developer
