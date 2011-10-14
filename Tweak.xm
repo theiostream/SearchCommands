@@ -38,6 +38,8 @@
 	NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:PLIST_PATH];
 	
 	for (unsigned int i=0; i<[[SCUtils dylibs] count]; i++) {
+		NSLog(@"================ Crap called. Index %d; loaded %@", i, [[SCUtils dylibs] objectAtIndex:i]);
+		
 		void* handle = dlopen([[[NSString stringWithFormat:DYLIB_PATH] stringByAppendingString:[[SCUtils dylibs] objectAtIndex:i]] UTF8String], RTLD_LAZY);
 		
 		if (handle == NULL) {
@@ -73,7 +75,7 @@
 		}
 		
 		if (handle != NULL) dlclose(handle); // I don't know why to check... But always good to make sure :p
-		if (dict != nil) [dict release];
 	}
+	if (dict != nil) [dict release];
 }
 %end
