@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "Setting proper permissions..."
+chmod a+wx /var/mobile/Library/SearchCommands/Preferences/pref.plist
+chown mobile /var/mobile/Library/SearchCommands/Preferences/pref.plist
+
+echo "Done! Enjoy SearchCommands."
